@@ -1,13 +1,10 @@
-// ES5 01
+// ES5
 function Dog (name, age) {
   this.name = name;
   this.age = age;
 }
-/** DEBUG **********************************************************
- * 1) should print 'Bark' to the console
- *******************************************************************/
 
-Dog.prototype.bark = function () { console.log('bark'); };
+Dog.prototype.bark = function () { console.log('Bark'); };
 Dog.diet = function() { return 'carnivore'; };
 
 // ES6
