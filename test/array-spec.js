@@ -7,7 +7,8 @@ describe("Array", () => {
   describe("isEqual(array)", () => {
     context("if each element on the array instance is equal to the passed-in array", () => {
       it("should return true", () => {
-        expect([1, 2, 3].isEqual([1, 2, 3])).to.be.true;
+        let testValue = [1, 2, 3].isEqual([1, 2, 3]);
+        expect(testValue).to.be.true;
         expect([1, 2, 3, 4].isEqual([1, 2, 3, 4])).to.be.true;
       });
     });
